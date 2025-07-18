@@ -6,4 +6,9 @@
 */
 
 // your code
-let factorial
+let factorial=1,tmp1=1,tmp2=10
+while(tmp1<=tmp2){
+  factorial*=tmp1
+  tmp1++
+}
+console.log(factorial)

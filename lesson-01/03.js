@@ -5,4 +5,10 @@
 */
 
 // your code
-let sum
+let sum=0,tmp1=1,tmp2=20
+while(tmp1<=tmp2){
+if(tmp1%2===1)
+  sum+=tmp1
+  tmp1++
+}
+console.log('Сумма нечетных равна:', sum)
