@@ -10,8 +10,9 @@ let grade
 //
 while(1)
 {
-    const score =  prompt("Укажи свой балл!")
-if(  score<0 || score>100 || isNaN(score) || score==='' )
+    //const score =  prompt("Укажи свой балл!")
+    const score = Math.trunc(Math.random()*100)
+    if(  score<0 || score>100 || isNaN(score) || score==='' )
 {
 //alert("Ты неправильно указал свой балл. Это должно быть чило в диапазоне от 0 до 100")
 continue
@@ -43,4 +44,5 @@ else if(score >= 90 && score <=100)
     break
 }
 }
+console.log("Твоя оценка: ",grade)
 //alert(`Твоя оценка: ${grade}`)
