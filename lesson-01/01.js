@@ -8,4 +8,3 @@ while(tmp<=20){
     sum+=tmp
     tmp++
 }
-console.log(sum)

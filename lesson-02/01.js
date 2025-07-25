@@ -8,11 +8,34 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+let isAdmin = false
+let  isVerifiedUser = false 
+let hasSpecialPermission = false
+let hasTemporaryPass = false
+let UserName='Arstem'
 
-let isAccess
-
+let isAccess =false
+if (UserName==="Artem") 
+    {
+        isVerifiedUser=true
+        isAdmin = true
+        hasSpecialPermission = true
+        hasTemporaryPass=false
+    }
+    else
+    {
+        isVerifiedUser=false
+        isAdmin = false
+        hasSpecialPermission = false
+        hasTemporaryPass=false
+    }
+    if ((isVerifiedUser===true || isVerifiedUser ===true) &&(hasSpecialPermission===true || hasTemporaryPass===true) )
+    {
+    isAccess=true 
+    }
+    else
+    {
+    isAccess=false
+    }
+    console.log(isAccess? "В доступе разрешено!":"В доступе отказано!" )
 // your code
