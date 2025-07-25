@@ -13,7 +13,7 @@ while(1)
     const score =  prompt("Укажи свой балл!")
 if(  score<0 || score>100 || isNaN(score) || score==='' )
 {
-alert("Ты неправильно указал свой балл. Это должно быть чило в диапазоне от 0 до 100")
+//alert("Ты неправильно указал свой балл. Это должно быть чило в диапазоне от 0 до 100")
 continue
 }
 else if (score >= 0 && score <= 49)
@@ -43,4 +43,4 @@ else if(score >= 90 && score <=100)
     break
 }
 }
-alert(`Твоя оценка: ${grade}`)
+//alert(`Твоя оценка: ${grade}`)
