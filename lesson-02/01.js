@@ -12,7 +12,7 @@ let isAdmin = false
 let isVerifiedUser = false 
 let hasSpecialPermission = false
 let hasTemporaryPass = false
-let UserName='Artem'
+let UserName='Art2em'
 
 let isAccess =false
 if (UserName==="Artem") 
@@ -29,7 +29,7 @@ if (UserName==="Artem")
         hasSpecialPermission = false
         hasTemporaryPass=false
     }
-    if ((isVerifiedUser===true || isAdmin ===true) && (hasSpecialPermission===true || hasTemporaryPass===true) )
+    if ((isVerifiedUser===true && hasTemporaryPass===true  ) || (isAdmin ===true && hasSpecialPermission===true) )
     {
     isAccess=true 
     }
