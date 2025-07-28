@@ -15,7 +15,7 @@ let hasTemporaryPass = false
 let UserName='Art2em'
 
 let isAccess =false
-if (UserName==="Artem") 
+/*if (UserName==="Artem") 
     {
         isVerifiedUser=true
         isAdmin = true
@@ -28,8 +28,9 @@ if (UserName==="Artem")
         isAdmin = false
         hasSpecialPermission = false
         hasTemporaryPass=false
-    }
-    if ((isVerifiedUser===true && hasTemporaryPass===true  ) || (isAdmin ===true && hasSpecialPermission===true) )
+*/
+
+    if ((isVerifiedUser===true && hasTemporaryPass===true ) || (isAdmin ===true && hasSpecialPermission===true) )
     {
     isAccess=true 
     }
