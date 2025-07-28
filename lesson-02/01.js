@@ -9,10 +9,10 @@
 
 // тестовые данные (значения можно менять)
 let isAdmin = false
-let  isVerifiedUser = false 
+let isVerifiedUser = false 
 let hasSpecialPermission = false
 let hasTemporaryPass = false
-let UserName='Arstem'
+let UserName='Artem'
 
 let isAccess =false
 if (UserName==="Artem") 
@@ -29,7 +29,7 @@ if (UserName==="Artem")
         hasSpecialPermission = false
         hasTemporaryPass=false
     }
-    if ((isVerifiedUser===true || isVerifiedUser ===true) &&(hasSpecialPermission===true || hasTemporaryPass===true) )
+    if ((isVerifiedUser===true || isAdmin ===true) && (hasSpecialPermission===true || hasTemporaryPass===true) )
     {
     isAccess=true 
     }
