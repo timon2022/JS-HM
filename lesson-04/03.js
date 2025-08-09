@@ -29,7 +29,7 @@ function includesElement(array,element)
     return false
  }
 
-function findUniqueElements(array,array2) 
+function findCommonElements(array,array2) 
 {
     let a =[]
     for(let i =0;i<array.length;i++)
@@ -42,4 +42,4 @@ function findUniqueElements(array,array2)
     }
     return a
 }
-console.log(findUniqueElements([1,2,3,4,6,7,9,99,9,1],[1,2,3]))
+console.log(findCommonElements([1,2,3,4,6,7,9,99,9,1],[1,2,3]))
