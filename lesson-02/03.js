@@ -6,12 +6,7 @@
 
 // тестовое значение, можно изменять
 let grade
-// your code
-//
-
-    //const score =  prompt("Укажи свой балл!")
     const score = Math.trunc(Math.random()*100)
-//if(  score<0 || score>100 || isNaN(score) || score==='' )
 
 if ( score <= 49)
 {
@@ -36,5 +31,3 @@ else if(score <=100)
     grade = 'A'
     
 }
-// console.log("Твоя оценка: ",grade)
-//alert(`Твоя оценка: ${grade}`)
