@@ -13,28 +13,28 @@ let grade
     const score = Math.trunc(Math.random()*100)
 //if(  score<0 || score>100 || isNaN(score) || score==='' )
 
-if (score >= 0 && score <= 49)
+if ( score <= 49)
 {
     grade='F'
 }    
-else if (score >= 50 && score <= 69)
+else if ( score <= 69)
     {   
         grade='D'  
     }
-else if(score >= 70 && score <= 79)
+else if(score <= 79)
 {
     grade = 'C'
     
 }
-else if(score >= 80 && score <= 89)
+else if( score <= 89)
 {
     grade = 'B'
     
 }
-else if(score >= 90 && score <=100)
+else if(score <=100)
 {
     grade = 'A'
     
 }
-//console.log("Твоя оценка: ",grade)
+// console.log("Твоя оценка: ",grade)
 //alert(`Твоя оценка: ${grade}`)
