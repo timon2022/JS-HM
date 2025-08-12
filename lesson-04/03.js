@@ -32,7 +32,12 @@ function includesElement(array,element)
 function findCommonElements(array,array2) 
 {
     let a =[]
-    for(let i =0;i<array.length;i++)
+    if(array.length===0 || array2.length===0)
+    {
+        return a
+    }else
+    {
+        for(let i =0;i<array.length;i++)
     {
         if(includesElement(array2,array[i]))
         {
@@ -40,6 +45,7 @@ function findCommonElements(array,array2)
         }
         
     }
+    }
     return a
 }
-console.log(findCommonElements([1,2,3,4,6,7,9,99,9,1],[1,2,3]))
+console.log(findCommonElements([0,6,5,4,6,7,9,99,9,0],[1,2,3,9]))
