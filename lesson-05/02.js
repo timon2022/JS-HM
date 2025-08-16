@@ -35,4 +35,14 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(obj,art,NewValue)
+{
+  if(obj?.[art])
+  {
+    obj[art]=NewValue
+  }
+  else
+  {
+    obj[art]=NewValue
+  }
+}
