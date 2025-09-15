@@ -30,14 +30,41 @@ const cancelButton = document.getElementById('cancel')
 const countdownDisplay = document.getElementById('countdown')
 
 let isTimerStarted = false
-let timerId
+let timerId    
 
 startButton.addEventListener('click', () => {
   let counter = 3
-
-  // your code
-})
+  let str=''
+  countdownDisplay.textContent=counter
+  if(isTimerStarted==false)
+  {
+    isTimerStarted = true 
+    timerId=setInterval(function timerStart (){
+  if(counter>=1)
+    {
+      str+=`${counter} -> `
+      countdownDisplay.textContent=--counter
+      if(counter==0)
+      {
+        countdownDisplay.textContent=str+"🚀"
+        clearInterval(timerStart)
+        return isTimerStarted = false
+      }
+    } 
+},1000)
+}else 
+{
+  countdownDisplay.textContent='Ракета уже запущена!'
+}
+}
+)
 
 cancelButton.addEventListener('click', () => {
-  // your code
+  if(isTimerStarted = true)
+  {
+  clearInterval(timerId)
+  countdownDisplay.textContent='Отменено'
+  isTimerStarted=false
+  }
 })
+
